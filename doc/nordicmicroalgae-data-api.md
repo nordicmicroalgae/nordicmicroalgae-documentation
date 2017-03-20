@@ -91,7 +91,6 @@ Available parameters
 
 **GET: http://api.nordicmicroalgae.org/taxa.json?filters[Group]=Diatoms**
 
-
     {
       "taxa":[
         {
@@ -128,7 +127,7 @@ Retrieve name, author, rank, facts and other related information for one taxon. 
 
 The URL format for retrieving all information is:
 
-    http://api.nordicmicroalgae.org/taxa/\<Scientific name\>.json
+    http://api.nordicmicroalgae.org/taxa/<Scientific name>.json
 
 The URL format for retrieving a subset (or a specific part) of information is:
 http://api.nordicmicroalgae.org/taxa/\<Scientific name\>/\<part\>.json
@@ -154,13 +153,13 @@ where \<part\> must be one the following:
           "metadata":{
             "Caption":"Living cells (BF)",
             "Date added":"2007-10-28 23:03:51",
-            "Media format":"image\/gif",
+            "Media format":"image/gif",
             "Title":"Dinophysis acuta",
             …
           },
-          "small_url":"http:\/\/media…\/small\/Dinophysis acuta_1.jpg",
-          "large_url":"http:\/\/media…\/large\/Dinophysis acuta_1.jpg",
-          "original_url":"http:\/\/media…\/original\/Dinophysis acuta_1.jpg"
+          "small_url":"http://media…/small/Dinophysis acuta_1.jpg",
+          "large_url":"http://media…/large/Dinophysis acuta_1.jpg",
+          "original_url":"http://media…/original/Dinophysis acuta_1.jpg"
         },
         …
       ]
@@ -189,8 +188,8 @@ where \<part\> must be one the following:
         "Note on taxonomy":"Testar",
         "Resting spore":"",
         "Scientific name":"Dinophysis acuta",
-        "Size":"Length 54-94 \u00b5m, width 43-60 \u00b5m",
-        "Tropic type":"A\/H",
+        "Size":"Length 54-94 u00b5m, width 43-60 u00b5m",
+        "Tropic type":"A/H",
         …
       },
       "external_facts":{
@@ -203,7 +202,7 @@ where \<part\> must be one the following:
         "Author":"Ehrenberg 1839",
         "Class":"Dinophyceae",
         "Division":"DINOPHYTA (PYRROPHYTA)",
-        "Formula":"p\/6*l*d1*d2",
+        "Formula":"p/6*l*d1*d2",
         "Geometric shape":"flattened ellipsoid",
         "Order":"DINOPHYSALES",
         "Size classes":[…],
@@ -241,7 +240,7 @@ Available parameters
           "media_id":"Acanthoceras zachariasii_1.jpg",
           "media_type":"image",
           "metadata":{
-            "Media format":"image\/jpeg",
+            "Media format":"image/jpeg",
             "Date added":"2013-08-29 11:05:54",
             "Title":"Acanthoceras zachariasii",
             "Preservation":["Formaldehyde"],
@@ -249,8 +248,8 @@ Available parameters
             …
           },
           "small_url":"http:…/small/Acanthoceras zachariasii_1.jpg",
-          "large_url":"http:…/large\/Acanthoceras zachariasii_1.jpg",
-          "original_url":"http:…/original\/Acanthoceras zachariasii_1.jpg"
+          "large_url":"http:…/large/Acanthoceras zachariasii_1.jpg",
+          "original_url":"http:…/original/Acanthoceras zachariasii_1.jpg"
         },
         …
       ]
@@ -270,9 +269,9 @@ Available parameters
             "Title":"cf. cyst of Protoperidinium oblongum",
             …
           },
-          "small_url":"http:…\/small\/Protoperidinium oblongum_4.jpg",
-          "large_url":"http:…\/large\/Protoperidinium oblongum_4.jpg",
-          "original_url":"http:…\/original\/Protoperidinium oblongum_4.jpg"
+          "small_url":"http:…/small/Protoperidinium oblongum_4.jpg",
+          "large_url":"http:…/large/Protoperidinium oblongum_4.jpg",
+          "original_url":"http:…/original/Protoperidinium oblongum_4.jpg"
         },
         …
       ]
@@ -282,31 +281,31 @@ Available parameters
 
 **GET: http://api.nordicmicroalgae.org/media.json?per_page=10&page=2**
 
-  {
-    "media":[
-      {
-        "media_id":"Achnanthes brevipes_2.jpg",
-        "media_type":"image",
-        "metadata":{
-          "Media format":"image\/jpeg",
-          "Date added":"2013-04-26 10:12:04",
-          …
+    {
+      "media":[
+        {
+          "media_id":"Achnanthes brevipes_2.jpg",
+          "media_type":"image",
+          "metadata":{
+            "Media format":"image/jpeg",
+            "Date added":"2013-04-26 10:12:04",
+            …
+          },
+          "small_url":"http:…/small/Achnanthes brevipes_2.jpg",
+          "large_url":"http:…/large/Achnanthes brevipes_2.jpg",
+          "original_url":"http:…/original/Achnanthes brevipes_2.jpg"
         },
-        "small_url":"http:…/small\/Achnanthes brevipes_2.jpg",
-        "large_url":"http:…\/large\/Achnanthes brevipes_2.jpg",
-        "original_url":"http:…\/original\/Achnanthes brevipes_2.jpg"
-      },
-      …
-    ],
-    "total":1517,
-    "page":2,
-    "pages":152,
-    "per_page":10
-  }
+        …
+      ],
+      "total":1517,
+      "page":2,
+      "pages":152,
+      "per_page":10
+    }
 
 ## Media item
 
-    http://api.nordicmicroalgae.org/media/\<Media ID\>.json
+    http://api.nordicmicroalgae.org/media/<Media ID>.json
 
 Retrieve information about one media item. Media ID is used as identifier and can be found in media lists (such as in responses from the “Taxon” or “Media list” requests).
 
@@ -325,9 +324,9 @@ Retrieve information about one media item. Media ID is used as identifier and ca
         "Institute":"University of Gothenburg, Marine botany",
         …
       },
-      "small_url":"http:…\/small\/Dinophysis acuta_1.jpg",
-      "large_url":"http:…\/large\/Dinophysis acuta_1.jpg",
-      "original_url":"http:…\/original\/Dinophysis acuta_1.jpg"
+      "small_url":"http:…/small/Dinophysis acuta_1.jpg",
+      "large_url":"http:…/large/Dinophysis acuta_1.jpg",
+      "original_url":"http:…/original/Dinophysis acuta_1.jpg"
     }
 
 ## Photographer/artist list
@@ -351,7 +350,7 @@ Retrieve a list of media contributors. Each item in the list contains the name o
 ## Settings
 
     http://api.nordicmicroalgae.org/settings.json
-    http://api.nordicmicroalgae.org/settings/\<Settings Key\>.json
+    http://api.nordicmicroalgae.org/settings/<Settings Key>.json
 
 Retreieves all or a specific subset of settings.
 
